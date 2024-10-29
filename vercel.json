@@ -1,7 +1,7 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/api/games", "dest": "/index.js" },
-    { "src": "/getpassword", "dest": "/index.js" }
+    { "src": "/api/games", "dest": "index.js" },
+    { "src": "/getpassword", "dest": "index.js" }
   ]
 }
