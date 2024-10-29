@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "./index.js", "use": "@vercel/node" }],
   "routes": [
-    { "src": "/getpassword", "dest": "/index.js" },
+    { "src": "/getpassword", "dest": "./index.js" },
     { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
