@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/juegos.css">
+    <title>Juegos</title>
+</head>
+<body>
+    
+    <video autoplay muted loop class="background-video">
+    <source src="./img/video2.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de video.
+  </video>
+    
+    <h1>Juegos actuales</h1>
+    <div class="filter-container">
+        <input type="text" id="filter-id" placeholder="Filtrar por nombre">
+        <button id="filter-button">Filtrar</button>
+        <button id="clear-filter">Limpiar filtro</button>
+        <a href="index.html" id="back-btn">Inicio</a>
+    </div>
+    
+    <div id="games-container"></div>
+  
+    
+    <script src="./js/juegos.js"></script>
+</body>
+</html>
