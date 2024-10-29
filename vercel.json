@@ -1,9 +1,10 @@
 {
-  "builds": [
-    { "src": "index.js", "use": "@vercel/node" }
-  ],
+  "version": 2,
+
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+
   "routes": [
-    { "src": "/api/games", "dest": "/api/games" },
-    { "src": "/api/getpassword", "dest": "/api/getpassword" }
+    { "src": "/api/games", "dest": "/index.js" },
+    { "src": "/getpassword", "dest": "/index.js" }
   ]
 }

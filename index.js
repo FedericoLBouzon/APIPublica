@@ -27,10 +27,10 @@ app.get('/api/games', async (req, res) => {
     }
 });
 
-app.post('./getpassword', (req, res) => {
+app.post('/getpassword', (req, res) => {
     const { username } = req.body;
 
-    fs.readFile('../data/users.json', 'utf8', (err, data) => {
+    fs.readFile('./data/users.json', 'utf8', (err, data) => {
         if (err) {
             return res.status(500).json({ message: 'Error al leer el archivo' });
         }
