@@ -13,11 +13,7 @@ window.onload = function () {
 
   async function fetchData(username) {
     try {
-      const baseURL = window.location.origin.includes("localhost")
-        ? "http://localhost:3000"
-        : "https://public-api-ashy-two.vercel.app/"; 
-  
-      const response = await fetch(`${baseURL}/getpassword`, {
+      const response = await fetch("http://localhost:3000/getpassword", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,9 +25,7 @@ window.onload = function () {
       console.error("Error:", error);
     }
   }
-  
 
-  
   let loginForm = document.getElementById("login-form");
   if (loginForm) {
     loginForm.addEventListener("submit", async function (event) {

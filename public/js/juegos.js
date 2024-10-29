@@ -1,6 +1,6 @@
 async function cargarAlumnos() {
     try {
-        const response = await fetch('https://public-api-ashy-two.vercel.app/');
+        const response = await fetch('http://localhost:3000/api/games');
         const data = await response.json();
 
         mostrarJuegos(data);
