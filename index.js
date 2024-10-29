@@ -2,8 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const fetch = require('node-fetch');  // Si fetch no está definido en Vercel
 const app = express();
-const PORT = 3000;
 
 app.use(cors());
 app.use(express.json()); 
@@ -39,4 +39,4 @@ app.post('/getpassword', (req, res) => {
     });
 });
 
-
+module.exports = app;
