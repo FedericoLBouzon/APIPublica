@@ -13,7 +13,7 @@ window.onload = function () {
   }
 
   // Configura la URL base dependiendo del entorno
-  const BASE_URL = window.location.origin; // Esto usará la URL de producción o localhost automáticamente
+  const BASE_URL = "https://public-api-ashy-two.vercel.app";
 
   // Función para enviar los datos de login al servidor
   async function fetchData(username) {
