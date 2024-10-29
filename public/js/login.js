@@ -54,7 +54,7 @@ window.onload = function () {
       if (fetchedData && contraseñaEncriptada === fetchedData.password) {
         console.log("Inicio de sesión exitoso");
         localStorage.setItem("isLoggedIn", "true");
-        window.location.href = "index.html"; // Redirige a la página principal
+        window.location.href = "../index.html"; // Redirige a la página principal
       } else {
         document.getElementById("error-message").innerText = "Usuario o contraseña incorrectos.";
       }
