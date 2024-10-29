@@ -7,6 +7,7 @@
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "index.js" }
+    { "src": "/api/games", "dest": "/index.js" },
+    { "src": "/getpassword", "dest": "/index.js" }
   ]
 }
